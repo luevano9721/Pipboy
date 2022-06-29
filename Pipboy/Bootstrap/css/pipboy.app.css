@@ -9,10 +9,47 @@ body, .navbar{
     background: #272b23;
 }
 
+body::after{
+    height: 100%;
+    width: 100%;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: repeating-linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.4) 1px,
+    transparent 1px,transparent 2px);
+    opacity: .3;
+    z-index: 100000;
+    pointer-events: none;
+}
+
+.nav-item.active ::before{
+    content: "";
+    position: absolute;
+    background: #272b23;
+    width: 100%;
+    height: 20px;
+    top: 13px;
+    left: 0px;
+    border-left: 2px solid ;
+    border-right: 2px solid ; 
+    border-top: 2px solid ;
+    z-index: -1;
+}
+
 ul > li.nav-item > button.nav-link, ul > li.nav-item.active > a.nav-link
 , ul > li.nav-item > a.nav-link{
-    color:#14fe17;
+    color:#14fe17 !important;
+    font-size: 32px;
+    line-height: 22px;
+    padding-bottom: 0px;
+    z-index: 50;
+    margin: auto;
+    position: relative;
+    background-color: #272b23;    
+   
 }
+
 .center-image{
     margin: auto;
     display: block;
@@ -27,4 +64,74 @@ ul > li.nav-item > button.nav-link, ul > li.nav-item.active > a.nav-link
     bottom: 0;
     width: calc(100%-20px) !important;
     margin: 10px;
+    border: none;
+}
+
+.pip-footer .col-6, .pip-footer .col-3{
+background: rgba(7, 96, 8, 0.69);
+}
+
+
+.navbar.navbar-expand-lg{
+    border-bottom:2px solid #14fe17;
+    padding:0px 10px;
+}
+
+.navbar.navbar-expand-lg::before, .navbar.navbar-expand-lg::after{
+    height: 7px;
+    width: 2px;
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: 5000;
+    background: #14fe17;
+    bottom: -8px;
+}
+
+.navbar.navbar-expand-lg::before{
+    left: 0px;
+}
+
+.navbar.navbar-expand-lg::after{
+    right: 0px;
+}
+
+.nav.nav-tabs{
+    margin: 20px;
+    border-bottom: none;
+}
+
+.nav.nav-tabs > .nav-item > .nav-link:hover{
+    border: 1px solid transparent;
+}
+
+.nav.nav-tabs > li > .nav-link{
+    font-size: 26px;
+    background: transparent !important;
+    border: 1px solid transparent;
+    padding: 5px 10px;
+}
+
+.nav.nav-tabs > li:nth-child(1) > .nav-link{
+    opacity: 0.9;
+}
+
+.nav.nav-tabs > li:nth-child(2) > .nav-link{
+    opacity: 0.5;
+}
+.nav.nav-tabs > li:nth-child(3) > .nav-link{
+    opacity: 0.3;
+}
+
+.level-progress{
+    width: 70%;
+    height: 10px;
+    border: 2px solid;
+    display: inline-block;
+}
+
+.level-progress-indicator{
+    height: 7px;
+    background: #14fe17;
+    width: 70%;
 }
