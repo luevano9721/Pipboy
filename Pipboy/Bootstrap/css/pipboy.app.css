@@ -51,11 +51,15 @@ ul > li.nav-item > button.nav-link, ul > li.nav-item.active > a.nav-link
 }
 
 .center-image{
+    position: absolute;
+    margin-left:10%;
+}
+
+.center-image img{
     margin: auto;
     display: block;
     position: relative;
     max-height: 700px;
-    margin-top: 100px;
     filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(7) brightness(1) contrast(2);
 }
 
@@ -65,12 +69,18 @@ ul > li.nav-item > button.nav-link, ul > li.nav-item.active > a.nav-link
     width: calc(100%-20px) !important;
     margin: 10px;
     border: none;
+    font-size: 22px;
 }
 
 .pip-footer .col-6, .pip-footer .col-3{
 background: rgba(7, 96, 8, 0.69);
 }
 
+.pip-footer .col-6{
+    margin: 0px 5px;
+    flex: 0 0 48%;
+ }
+    
 
 .navbar.navbar-expand-lg{
     border-bottom:2px solid #14fe17;
@@ -134,4 +144,63 @@ background: rgba(7, 96, 8, 0.69);
     height: 7px;
     background: #14fe17;
     width: 70%;
+}
+
+
+.stat-bar{
+    width: 60px;
+    margin: auto;
+}
+
+.stat-bars .row{
+    margin-bottom: 160px;
+}
+
+.w10{
+    width: 10%;
+}
+.w20{
+    width: 20%;
+}
+.w30{
+    width: 30%;
+}
+.w40{
+    width: 40%;
+}
+.w50{
+    width: 50%;
+}
+.w60{
+    width: 60%;
+}
+.w70{
+    width: 70%;
+}
+.w80{
+    width: 80%;
+}
+.w90{
+    width: 90%;
+}
+
+.stat-numbers .col-1,.stat-numbers .col-2{
+    background: rgba(7, 96, 8, 0.69);
+    margin-right: 4px;
+    margin-top: -100px;
+    max-height: 80px;
+}
+
+.stat-numbers .col-1.transparent,.stat-numbers .col-2.transparent{
+    background: transparent;
+}
+
+.stat-numbers img{
+    width: 100%;
+    max-height: 80px;
+    filter: grayscale(1) brightness(200) contrast(0) sepia(100%) hue-rotate(55deg) saturate(20);
+}
+
+.stat-numbers img.sm-img{
+    width: 20px;
 }

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>PipBoy</title>
+
+        <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="Bootstrap/css/pipboy.app.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg col-12 align-self-center">
+            <div class="collapse navbar-collapse offset-md-2" id="mainNav">
+                <ul class="navbar-nav nav-fill col-10">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">STAT</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="inv.html">INV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">DATA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">MAP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">RADIO</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container col-8 offset-md-2">
+            <div class="row col-12">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <button  data-bs-target="#home-tab-pane" class="nav-link" 
+                        data-bs-toggle="tab" role="presentation"
+                        aria-controls="home-tab-pane" aria-selected="true">WEAPONS</button >
+                    </li>
+                    <li class="nav-item">
+                        <button  data-bs-target="#special-tab-pane" class="nav-link" 
+                        data-bs-toggle="tab" role="presentation"
+                        aria-controls="special-tab-pane" aria-selected="false">ARMOR</button >
+                    </li>
+                    <li class="nav-item">
+                        <button  data-bs-target="#perks-tab-pane" class="nav-link" 
+                        data-bs-toggle="tab" role="presentation"
+                        aria-controls="perks-tab-pane" aria-selected="false">AID</button >
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane show active" id="home-tab-pane" role="tabpanel">
+                       <ul class="item-list">
+                        <li> <a href="#" class="44-pistol">.44 Pistol</a></li>
+                        <li> <a href="#" class="10mm-pistol">10mm Pistol</a></li>
+                        <li> <a href="#" class="assault-rifle">Assault Rifle</a></li>
+                       </ul>
+                    </div>
+                   
+                    <div class="tab-pane" id="special-tab-pane" role="tabpanel">
+                       
+                    </div>
+                    <div class="tab-pane" id="perks-tab-pane" role="tabpanel">
+                       
+                    </div>
+                </div>
+            </div>            
+        </div>
+       
+         
+
+        <navbar class="col-12 navbar navbar-light pip-footer">
+            <div class="row col-12">
+                <div class="col-3">
+                    HP 90/90
+                </div>
+                <div class="col-6 text-center">
+                    LEVEL 1
+                    <div  class="level-progress">
+                        <div  class="level-progress-indicator">                       
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-3 text-end">
+                    AP 50/50
+                </div>
+            </div>
+
+        </navbar>
+
+
+
+        <script src="Bootstrap/jquery-3.6.0.min.js"></script>
+        <script src="Bootstrap/js/bootstrap.min.js"></script>
+        <script src="Bootstrap/js/pipboy.app.js"></script>
+    </body>
+</html>
